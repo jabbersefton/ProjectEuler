@@ -23,6 +23,26 @@ for ( i=0; i < 1000; i++){
 console.log(fivesTotal);
 console.log(threesTotal+fivesTotal);
 
+/*Single function that combines both*/
+
+
+var combined = function (number){
+    var fullTotal = 0;
+    for ( i=0; i < number; i++){
+       if( i % 3 === 0){
+         fullTotal += i;
+     }
+     if( i % 5 === 0){
+         fullTotal += i;
+     }
+        
+    }
+   console.log(fullTotal);  
+    
+};
+
+combined(10);
+
 
 /* Simple function version iterating upward in 3's and 5's*/
 var threes = function (number){
