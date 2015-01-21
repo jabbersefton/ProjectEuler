@@ -6,7 +6,7 @@ var threesTotal = 0;
 
 for ( i=0; i < 1000; i++){
      if( i % 3 === 0){
-         threesTotal = i += i;
+         threesTotal  += i;
      }
 }
 
@@ -16,7 +16,7 @@ var fivesTotal = 0;
 
 for ( i=0; i < 1000; i++){
      if( i % 5 === 0){
-         fivesTotal = i += i;
+         fivesTotal  += i;
      }
 }
 
@@ -56,4 +56,16 @@ var threes = function (number){
 };
 
 threes(10);
+
+var fives = function (number){
+    var fivesTotal = 0;
+    for ( i=0; i < number; i+=3){
+        fivesTotal += i;
+        
+    }
+   console.log(fivesTotal);  
+    
+};
+
+fives(10);
 
